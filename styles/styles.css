@@ -27,6 +27,9 @@ body{
     align-items: center;
     justify-content: space-between;
     margin: 20px;
+    /* position:sticky;
+    top:0px;
+    bottom: 50%; */
 }
 
 .header h1{
@@ -274,7 +277,59 @@ body{
     justify-items: center;
     align-items: center;
     padding: 12px;
+    width: 100%;
     /* margin: 15px; */
     color: var(--text);
     background-color: var(--dark);
 }
+
+ @media screen and (max-width:1144px){
+    
+    .menu{
+        display: none;
+    }
+
+    .hero_session{
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .social{
+        position:absolute;
+        top:50px;
+        right:100%;
+    }
+
+    .skl{
+        margin:10%;
+    }
+
+    .about{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+    }
+
+    .projects-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about img{
+        widht:100%;
+    }
+
+    .header{
+        width:100%;
+    }
+
+    .foot{
+        width: 100%;
+    }
+
+    .foot p{
+        justify-items: center;
+        text-align: center;
+    }
+ }
