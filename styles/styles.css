@@ -20,6 +20,7 @@ body{
 
     background-color: var(--background);
 }
+
 .header{
     display: flex;
     flex-wrap: wrap;
@@ -65,6 +66,16 @@ body{
 
 .title{
     margin-left:25px;
+}
+
+#boucle{
+    font-weight: bold;
+    font-size:1rem;
+}
+
+.title h1 span{
+    background-color:var(--text);
+    padding:5px;
 }
 .social {
     display: flex;
