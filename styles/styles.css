@@ -41,6 +41,7 @@ body{
 .menu a{
     color: var(--text);
     font-weight:bold;
+    flex-wrap: wrap;
 }
 
 .menu a:hover{
