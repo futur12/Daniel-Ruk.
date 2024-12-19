@@ -144,3 +144,137 @@ body{
     color: var(--dark);
 }
 
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+}
+
+.skill {
+    width: 100%;
+    max-width: 500px; /* Largeur maximale des barres */
+    text-align: left;
+}
+
+.bar {
+    height: 30px; /* Hauteur de la barre */
+    width: 100%;  /* Largeur de la barre de 100% du parent */
+    background-color: #e2dede;  /* Fond de la barre */
+    border-radius: 15px;
+    position: relative;
+}
+
+.progress {
+    height: 100%; /* Remplissage complet de la hauteur de la barre */
+    width: 0%; /* La largeur sera définie par le pourcentage */
+    background-color: var(--dark); /* Couleur de la progression */
+    border-radius: 15px;
+    transition: width 1s ease; /* Animation de la largeur */
+}
+
+.skill-name {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text)
+}
+
+.skl{
+    margin:50px;
+    /* justify-content: center;
+    align-content:center; */
+    justify-items:center;
+
+}
+
+
+
+
+
+
+
+
+.projects-section {
+    width: 80%;
+    text-align: center;
+}
+
+.projects-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Conteneur de tous les projets (pour l'animation horizontale) */
+.projects-container {
+    display: flex;
+    overflow-x: hidden;  /* Masquer les projets en dehors du conteneur */
+    scroll-behavior: smooth; /* Défiler en douceur */
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+/* Chaque projet */
+.project {
+    flex-shrink: 0; /* Les projets ne doivent pas rétrécir */
+    width: 300px;  /* Largeur de chaque carte de projet */
+    height: 300px; /* Hauteur des cartes */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Effet au survol d'un projet */
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Style des images */
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Titre et description */
+.project h3 {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.projects-section{
+    justify-items:center;
+    align-items:center;
+    margin:50px;
+}
+
+/* Animation automatique pour faire défiler les projets horizontalement */
+@keyframes scrollProjects {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+/* Animation sur la classe active */
+.projects-container.scrolling {
+    animation: scrollProjects 15s linear infinite;
+}
+
+.foot{
+
+    justify-items: center;
+    align-items: center;
+    padding: 12px;
+    /* margin: 15px; */
+    color: var(--text);
+    background-color: var(--dark);
+}

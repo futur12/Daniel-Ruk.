@@ -63,3 +63,55 @@ function changeText() {
 typeText(texts[currentIndex], () => {
     setTimeout(changeText, 11000);  // Changer de texte après 11 secondes
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const skills = document.querySelectorAll('.skill');
+
+    skills.forEach(skill => {
+        const progressBar = skill.querySelector('.progress');  // Sélectionne la barre de progression
+        const percentage = skill.getAttribute('data-percent');  // Récupère le pourcentage
+
+        // Applique la largeur de la barre en fonction du pourcentage
+        progressBar.style.width = `${percentage}%`;
+    });
+});
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     // Sélectionner le conteneur des projets
+//     const projectsContainer = document.querySelector('.projects-container');
+
+//     // Ajouter la classe "scrolling" pour activer l'animation automatique
+//     projectsContainer.classList.add('scrolling');
+
+    // Facultatif : ajouter des boutons pour contrôler le défilement manuellement
+    // L'événement de défilement manuel par clic sur des boutons (si tu veux)
+//     const nextButton = document.createElement('button');
+//     nextButton.textContent = '→';
+//     nextButton.style.position = 'sticky';
+//     nextButton.style.right = '20px';
+//     nextButton.style.top = '50%';
+//     nextButton.style.fontSize = '2rem';
+//     nextButton.style.zIndex = '10';
+//     document.body.appendChild(nextButton);
+
+//     const prevButton = document.createElement('button');
+//     prevButton.textContent = '←';
+//     prevButton.style.position = 'fixed';
+//     prevButton.style.left = '20px';
+//     prevButton.style.top = '50%';
+//     prevButton.style.fontSize = '2rem';
+//     prevButton.style.zIndex = '10';
+//     document.body.appendChild(prevButton);
+
+//     nextButton.addEventListener('click', () => {
+//         projectsContainer.scrollBy({ left: 320, behavior: 'smooth' });
+//     });
+
+//     prevButton.addEventListener('click', () => {
+//         projectsContainer.scrollBy({ left: -320, behavior: 'smooth' });
+//     });
+// });
