@@ -93,7 +93,7 @@ document.getElementById('whatsapp-button').addEventListener('click', function() 
 
 document.getElementById('kali').addEventListener('click', function(){
 
-    var ul=`https://x.com/rukwasha21516?t=vVV8XeEjjQyZqtAmc4C65Q&s=09`;
+    var ul=``;
 
     window.open(ul, 'blank');
 

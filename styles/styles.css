@@ -293,6 +293,12 @@ body{
         display:flex;
         flex-direction: column-reverse;
         align-items: center;
+        /* width:100%; */
+        width: auto;
+    }
+
+    .hero_session img{
+        width:100px;
     }
 
     .social{
@@ -305,6 +311,16 @@ body{
         margin:10%;
     }
 
+    .contact button{
+        /* display:flex; */
+        /* width:10px; */
+        justify-content:center;
+    }
+
+    .contact{
+        align-items: center;
+        width: 100%;
+    }
     .about{
         display: flex;
         width: 50%;
