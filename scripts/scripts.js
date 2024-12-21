@@ -96,8 +96,10 @@ document.getElementById('kali').addEventListener('click', function(){
     var ul=`https://x.com/rukwasha21516?t=vVV8XeEjjQyZqtAmc4C65Q&s=09`;
 
     window.open(ul, 'blank');
-    
+
 });
+
+document.getElementById('anne').textContent = new Date().getFullYear();
 
 // document.addEventListener('DOMContentLoaded', () => {
 //     // Sélectionner le conteneur des projets
