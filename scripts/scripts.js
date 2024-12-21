@@ -80,6 +80,25 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+document.getElementById('whatsapp-button').addEventListener('click', function() {
+    // Replace with the target phone number (include country code)
+    var phoneNumber = '+243972218023'; // Example phone number
+    var url = `https://wa.me/${phoneNumber}`;
+    
+    // Open the WhatsApp chat link in a new tab or window
+    window.open(url, '_blank');
+
+});
+
+document.getElementById('kali').addEventListener('click', function(){
+
+    var ul=`https://x.com/rukwasha21516?t=vVV8XeEjjQyZqtAmc4C65Q&s=09`;
+
+    window.open(ul, 'blank');
+    
+});
+
 // document.addEventListener('DOMContentLoaded', () => {
 //     // Sélectionner le conteneur des projets
 //     const projectsContainer = document.querySelector('.projects-container');
