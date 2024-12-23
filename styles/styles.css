@@ -320,6 +320,14 @@ body{
     .contact{
         align-items: center;
         width: 100%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image img{
+
+        width: 100%;
     }
     .about{
         display: flex;
@@ -342,6 +350,10 @@ body{
 
     .foot{
         width: 100%;
+    }
+
+    .contact{
+
     }
 
     .foot p{
