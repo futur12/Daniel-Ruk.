@@ -1,9 +1,5 @@
 // const speed =[Writer] Poet, Programmer, I speak four languages, I am a dancer,...],
 
-while(true){
-console.log('s');
-}
-
 // Les 6 textes que tu veux afficher
 const texts = [
     "I'm a Writter.",
