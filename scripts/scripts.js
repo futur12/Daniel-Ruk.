@@ -79,6 +79,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// document.getElementById('whatsapp-button').addEventListener('click', function())
+// {
+//     let pone=`+243979387845`;
+//     let ur=`https://wa.me/${pone}`;
 
 document.getElementById('whatsapp-button').addEventListener('click', function() {
     // Replace with the target phone number (include country code)
@@ -117,6 +121,21 @@ document.getElementById('anne').textContent = new Date().getFullYear();
 //     nextButton.style.fontSize = '2rem';
 //     nextButton.style.zIndex = '10';
 //     document.body.appendChild(nextButton);
+
+
+// Fonction pour basculer entre le mode clair et nuit
+function toggleMode() {
+    const body = document.body;
+    const toggle = document.getElementById('toggle');
+    if (toggle.checked) {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+    } else {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+    }
+}
+
 
 //     const prevButton = document.createElement('button');
 //     prevButton.textContent = '←';
